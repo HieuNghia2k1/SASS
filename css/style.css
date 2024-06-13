@@ -1,0 +1,31 @@
+.btn-demo {
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+.btn-demo:hover {
+  background-color: red;
+  color: white;
+}
+
+.container h2 {
+  background-color: red;
+  color: white;
+}
+.container h2 span {
+  background-color: orange;
+}
+.container ul li {
+  background-color: green;
+  color: #ffffff;
+}
+
+.btn-mixin {
+  padding: 10px 20px;
+  border-radius: 12px;
+  background-color: #000000;
+  color: red;
+  border: none;
+  transition: all 0.5s;
+}/*# sourceMappingURL=style.css.map */

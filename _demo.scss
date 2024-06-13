@@ -1,0 +1,51 @@
+// Biến
+$bg-button: #000000;
+$text-button: #ffffff;
+$padding-button: 10px 20px;
+
+.btn-demo {
+  border: none;
+  background-color: $bg-button;
+  color: $text-button;
+  padding: $padding-button;
+
+  //  Parent selector (Đại diện cho selector cha gần nhất)
+  &:hover {
+    background-color: red;
+    color: white;
+  }
+}
+
+// Nested Route
+.container {
+  h2 {
+    background-color: red;
+    color: white;
+    span {
+      background-color: orange;
+    }
+  }
+  ul li {
+    background-color: green;
+    color: #ffffff;
+  }
+}
+
+// Mixin
+@mixin styleButton($padding, $bg, $color, $border) {
+  padding: $padding;
+  border-radius: 12px;
+  background-color: $bg;
+  color: $oolor;
+  border: $border;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: $color;
+    color: $bg;
+  }
+}
+
+.btn-mixin {
+  @include styleButton($padding-button, $bg-button, red, none);
+}

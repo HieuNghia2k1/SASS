@@ -1,0 +1,17 @@
+header {
+  padding: 20px 0;
+  .header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header_logo {
+      @include styleText($blue-1, $fw-bold, $fs-xl);
+    }
+
+    ul {
+    }
+
+    li {
+    }
+  }
+}
